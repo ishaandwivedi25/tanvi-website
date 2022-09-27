@@ -141,14 +141,46 @@ blockquote {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+.parallax-section {
+    position: relative;
+    width: 100%;
+    height:100%;
+}
+.parallax-child-section {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+}
 
+#frontlashID{
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(0);
+    will-change: transform;
+    z-index: 1;
+}
+.fw-main-row{
+    background-attachment:scroll;
+    background-image: url("../images/banner.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	background-color: rgba(74, 4, 38, 0.53);
+}
 .banner-image {
 	position: absolute;
 	vertical-align: middle;
 	min-height: 100%;
 	width: 100%;
 }
-.banner:after {
+/* .banner:after {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -156,7 +188,7 @@ blockquote {
 	bottom: 0;
 	background-color: rgba(74, 4, 38, 0.53);
 	content: "";
-}
+} */
 .banner-caption {
 	position: absolute;
 	bottom: 0;
